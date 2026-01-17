@@ -278,8 +278,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="icon" href="/assets/la-icon.png" sizes="any" />
+        <link rel="apple-touch-icon" href="/assets/la-icon.png" />
         <meta name="theme-color" content="#0a1628" />
         <script
           type="application/ld+json"
