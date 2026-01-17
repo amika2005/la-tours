@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { tours } from '@/data/tours';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://www.latours.com';
+  const baseUrl = 'https://www.latourstaxi.com';
 
   // Static Pages
   const staticPages = [

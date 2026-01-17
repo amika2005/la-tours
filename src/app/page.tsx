@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     'book Sri Lanka tour',
   ],
   alternates: {
-    canonical: 'https://www.latours.com',
+    canonical: 'https://www.latourstaxi.com',
   },
   openGraph: {
     title: 'LA Tours Sri Lanka - Private Tours & Airport Transfers',

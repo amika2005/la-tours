@@ -20,12 +20,12 @@ export const metadata: Metadata = {
     'Sri Lanka itinerary',
   ],
   alternates: {
-    canonical: 'https://www.latours.com/destinations',
+    canonical: 'https://www.latourstaxi.com/destinations',
   },
   openGraph: {
     title: 'Sri Lanka Destinations - Best Places to Visit',
     description: 'Explore the most beautiful destinations in Sri Lanka. Sigiriya, Kandy, Galle & more!',
-    url: 'https://www.latours.com/destinations',
+    url: 'https://www.latourstaxi.com/destinations',
     images: ['/assets/destinations-hero.png'],
   },
 };

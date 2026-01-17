@@ -15,12 +15,12 @@ export const metadata: Metadata = {
     'book Colombo airport transfer',
   ],
   alternates: {
-    canonical: 'https://www.latours.com/contact',
+    canonical: 'https://www.latourstaxi.com/contact',
   },
   openGraph: {
     title: 'Contact LA Tours - Book Your Sri Lanka Adventure',
     description: 'Ready to explore Sri Lanka? Contact us now! WhatsApp available 24/7.',
-    url: 'https://www.latours.com/contact',
+    url: 'https://www.latourstaxi.com/contact',
     images: ['/assets/contact-hero.png'],
   },
 };

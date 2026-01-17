@@ -15,12 +15,12 @@ export const metadata: Metadata = {
     'LA Tours reviews',
   ],
   alternates: {
-    canonical: 'https://www.latours.com/about',
+    canonical: 'https://www.latourstaxi.com/about',
   },
   openGraph: {
     title: 'About LA Tours Sri Lanka - Your Trusted Travel Partner',
     description: 'Meet the team behind LA Tours. Professional drivers, modern vehicles, best service!',
-    url: 'https://www.latours.com/about',
+    url: 'https://www.latourstaxi.com/about',
     images: ['/assets/about-hero.jpeg'],
   },
 };

@@ -18,12 +18,12 @@ export const metadata: Metadata = {
     'best Sri Lanka tours 2025',
   ],
   alternates: {
-    canonical: 'https://www.latours.com/packages',
+    canonical: 'https://www.latourstaxi.com/packages',
   },
   openGraph: {
     title: 'Sri Lanka Tour Packages - Book Day Tours & Safaris',
     description: 'Explore our amazing tour packages. Sigiriya, Kandy, Yala Safari, Galle & more!',
-    url: 'https://www.latours.com/packages',
+    url: 'https://www.latourstaxi.com/packages',
     images: ['/assets/packages-hero.png'],
   },
 };

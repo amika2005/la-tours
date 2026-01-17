@@ -6,7 +6,7 @@ import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.latours.com'),
+  metadataBase: new URL('https://www.latourstaxi.com'),
   title: {
     default: 'LA Tours Sri Lanka - #1 Private Tours & Airport Transfers | Book Now',
     template: '%s | LA Tours Sri Lanka - Best Tour Company',
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     'LA Tours Sri Lanka',
     'LA Tours Colombo',
   ],
-  authors: [{ name: 'LA Tours Sri Lanka', url: 'https://www.latours.com' }],
+  authors: [{ name: 'LA Tours Sri Lanka', url: 'https://www.latourstaxi.com' }],
   creator: 'LA Tours Sri Lanka',
   publisher: 'LA Tours Sri Lanka',
   category: 'Travel',
@@ -76,7 +76,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'LA Tours Sri Lanka - Best Private Tours & Airport Transfers',
     description: 'Discover the beauty of Sri Lanka with our private tours. Sigiriya, Kandy, Galle, Yala Safari & more. Trusted by 1000+ travelers. Book now!',
-    url: 'https://www.latours.com',
+    url: 'https://www.latourstaxi.com',
     siteName: 'LA Tours Sri Lanka',
     images: [
       {
@@ -133,13 +133,13 @@ export default function RootLayout({ children }: RootLayoutProps) {
   const organizationSchema = {
     '@context': 'https://schema.org',
     '@type': 'TravelAgency',
-    '@id': 'https://www.latours.com/#organization',
+    '@id': 'https://www.latourstaxi.com/#organization',
     name: 'LA Tours Sri Lanka',
     alternateName: 'LA Tours',
-    image: 'https://www.latours.com/assets/destinations-hero.png',
-    logo: 'https://www.latours.com/assets/sri-lanka-icon.png',
+    image: 'https://www.latourstaxi.com/assets/destinations-hero.png',
+    logo: 'https://www.latourstaxi.com/assets/sri-lanka-icon.png',
     description: 'LA Tours is Sri Lanka\'s premier tour company offering private airport transfers, day tours, and customized travel packages. Trusted by thousands of international travelers.',
-    url: 'https://www.latours.com',
+    url: 'https://www.latourstaxi.com',
     telephone: '+94760866309',
     email: 'latourstaxi@gmail.com',
     address: {
@@ -216,18 +216,18 @@ export default function RootLayout({ children }: RootLayoutProps) {
   const websiteSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    '@id': 'https://www.latours.com/#website',
-    url: 'https://www.latours.com',
+    '@id': 'https://www.latourstaxi.com/#website',
+    url: 'https://www.latourstaxi.com',
     name: 'LA Tours Sri Lanka',
     description: 'Book private tours and airport transfers in Sri Lanka',
     publisher: {
-      '@id': 'https://www.latours.com/#organization',
+      '@id': 'https://www.latourstaxi.com/#organization',
     },
     potentialAction: {
       '@type': 'SearchAction',
       target: {
         '@type': 'EntryPoint',
-        urlTemplate: 'https://www.latours.com/packages?search={search_term_string}',
+        urlTemplate: 'https://www.latourstaxi.com/packages?search={search_term_string}',
       },
       'query-input': 'required name=search_term_string',
     },
