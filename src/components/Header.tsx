@@ -62,8 +62,7 @@ export default function Header() {
         <div className={styles.container}>
           {/* Logo */}
           <Link href="/" className={styles.logo}>
-            <span className={styles.logoText}>LA <span className={styles.logoHighlight}>TOURS</span></span>
-            <span className={styles.logoTagline}>SRI LANKA</span>
+            <img src="/assets/logo.png" alt="LA Tours Sri Lanka" className={styles.logoImage} />
           </Link>
 
           {/* Desktop Navigation */}

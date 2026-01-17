@@ -98,8 +98,7 @@ export default function Footer() {
           </div>
 
            <div className={styles.brandArea}>
-              <span className={styles.brandLogoText}>LA <span className={styles.brandHighlight}>TOURS</span></span>
-              <span className={styles.brandSub}>SRI LANKA</span>
+              <img src="/assets/logo.png" alt="LA Tours Sri Lanka" style={{ height: '90px', width: 'auto', marginBottom: '10px' }} />
           </div>
         </div>
       </div>

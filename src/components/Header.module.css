@@ -68,7 +68,7 @@
   z-index: 1000;
   background-color: transparent;
   transition: all 0.3s ease;
-  padding: 10px 0;
+  padding: 0;
 }
 
 .header.scrolled {
@@ -109,6 +109,28 @@
   font-weight: 700;
   color: #FFCC00;
   display: block;
+}
+
+.logoImage {
+  height: 70px;
+  width: auto;
+  transition: all 0.3s ease;
+  object-fit: contain;
+}
+
+/* Scrolled state sizing */
+.header.scrolled .logoImage {
+  height: 55px;
+}
+
+@media (min-width: 992px) {
+  .logoImage {
+    height: 100px; /* Large hero logo */
+  }
+  
+  .header.scrolled .logoImage {
+    height: 60px; /* Compact information scent when scrolled */
+  }
 }
 
 .logoHighlight {

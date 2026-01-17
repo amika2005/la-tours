@@ -24,7 +24,7 @@ export default function About() {
     'Comfortable and well-maintained vehicles for every journey',
     'Professional, English-speaking drivers with local expertise',
     'Flexible tour packages tailored to your preferences',
-    'Competitive pricing with transparent rates - 120 LKR per km',
+    'Competitive pricing with transparent rates',
     '24/7 customer support throughout your travel experience',
   ];
 

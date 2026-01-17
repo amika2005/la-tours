@@ -240,7 +240,7 @@ export default function PackageDetail({ params }: PageProps) {
         </div>
 
         {/* Gallery Section */}
-        {tour.gallery && (
+        {tour.id === 1 ? (
           <section className={styles.gallerySection}>
             <div className={styles.container}>
               <motion.div 
@@ -249,29 +249,73 @@ export default function PackageDetail({ params }: PageProps) {
                 viewport={{ once: true }}
                 className={styles.galleryHeader}
               >
-                <h2 className={styles.sectionTitle}>Captured Moments</h2>
-                <p className={styles.sectionSubtitle}>See what awaits you on this journey</p>
+                <h2 className={styles.sectionTitle}>Our Fleet</h2>
+                <p className={styles.sectionSubtitle}>Choose the perfect vehicle for your journey</p>
               </motion.div>
               
-              <div className={styles.galleryGrid}>
-                {tour.gallery.map((img: string, index: number) => (
+              <div className={styles.highlightsGrid}>
+                {[
+                   { name: 'Premium Sedan', image: '/assets/prius.png', seats: '3 Passengers', bags: '2 Luggage' },
+                   { name: 'Luxury Van', image: '/assets/kia.png', seats: '6 Passengers', bags: '4 Luggage' },
+                   { name: 'Standard Car', image: '/assets/prius.png', seats: '3 Passengers', bags: '2 Luggage' },
+                   { name: 'Large Van', image: '/assets/kia.png', seats: '9 Passengers', bags: '6 Luggage' }
+                ].map((vehicle, index) => (
                   <motion.div 
                     key={index} 
                     initial={{ opacity: 0, scale: 0.9 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
                     transition={{ delay: index * 0.1 }}
-                    className={`${styles.galleryItem} ${index === 0 ? styles.galleryItemLarge : ''}`}
+                    className={styles.nearbyCard}
+                    style={{ textAlign: 'center', padding: '1rem' }}
                   >
-                    <img src={img} alt={`${tour.title} gallery ${index + 1}`} className={styles.galleryImage} />
-                    <div className={styles.galleryOverlay}>
-                      <Share2 size={24} color="#fff" />
+                     <div style={{ height: '180px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1rem' }}>
+                        <img src={vehicle.image} alt={vehicle.name} style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
+                     </div>
+                    <h4 className={styles.nearbyTitle}>{vehicle.name}</h4>
+                    <div style={{ fontSize: '0.9rem', color: '#666', marginTop: '0.5rem' }}>
+                      <p>{vehicle.seats}</p>
+                      <p>{vehicle.bags}</p>
                     </div>
                   </motion.div>
                 ))}
               </div>
             </div>
           </section>
+        ) : (
+          tour.gallery && (
+            <section className={styles.gallerySection}>
+              <div className={styles.container}>
+                <motion.div 
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  className={styles.galleryHeader}
+                >
+                  <h2 className={styles.sectionTitle}>Captured Moments</h2>
+                  <p className={styles.sectionSubtitle}>See what awaits you on this journey</p>
+                </motion.div>
+                
+                <div className={styles.galleryGrid}>
+                  {tour.gallery.map((img: string, index: number) => (
+                    <motion.div 
+                      key={index} 
+                      initial={{ opacity: 0, scale: 0.9 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: index * 0.1 }}
+                      className={`${styles.galleryItem} ${index === 0 ? styles.galleryItemLarge : ''}`}
+                    >
+                      <img src={img} alt={`${tour.title} gallery ${index + 1}`} className={styles.galleryImage} />
+                      <div className={styles.galleryOverlay}>
+                        <Share2 size={24} color="#fff" />
+                      </div>
+                    </motion.div>
+                  ))}
+                </div>
+              </div>
+            </section>
+          )
         )}
 
         {/* Nearby Places Section */}

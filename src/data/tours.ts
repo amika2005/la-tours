@@ -21,14 +21,14 @@ export interface Tour {
 export const tours: Tour[] = [
   {
     id: 1,
-    title: 'Airport Transfer',
-    location: 'BIA - Colombo',
-    duration: '1-2 hours',
-    distance: '~35 km',
-    price: '4,200',
-    description: 'Comfortable airport pickup and drop service between Bandaranaike International Airport and Colombo.',
+    title: 'Airport Transfer (BIA to Galle)',
+    location: 'BIA - Galle',
+    duration: '2-3 hours',
+    distance: '~150 km',
+    price: '28,000',
+    description: 'Direct, comfortable transfer from Bandaranaike International Airport to Galle/Unawatuna via Highway.',
     image: '/assets/contact-hero.png',
-    longDescription: 'Ensure a stress-free start to your Sri Lankan journey with our premium airport transfer service. Our professional drivers will greet you at the arrival terminal, assist with your luggage, and drive you comfortably to your destination in Colombo or surrounding areas.',
+    longDescription: 'Start your vacation right with our express airport transfer service from Bandaranaike International Airport (CMB) directly to Galle, Fort, or Unawatuna via the Southern Expressway. Our drivers will meet you at the arrivals hall.',
     highlights: ['Meet & Greet Service', 'Air-conditioned Vehicle', 'Professional Driver', 'Highway Charges Included'],
     includes: ['Private Car/Van', 'Fuel & Driver', 'Highway Tolls', 'Parking Charges'],
     gallery: ['/assets/contact-hero.png', '/assets/kia.png', '/assets/prius.png']
