@@ -111,7 +111,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: 'your-google-verification-code', // Add your Google Search Console verification
+    google: 'pawADgAJNMohsy-PNG6bjhHQAI9KgFLztabvtvIWrwA',
   },
   other: {
     'geo.region': 'LK',
