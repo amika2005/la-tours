@@ -1,0 +1,207 @@
+.vehicles {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.subtitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.icon {
+  width: 12px;
+  height: 12px;
+  display: flex;
+}
+
+.icon svg {
+  width: 12px;
+  height: 12px;
+  fill: #4a90d9;
+}
+
+.subtitleText {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #0a1628;
+}
+
+.title {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  font-weight: 600;
+  color: #0a1628;
+  margin-bottom: 10px;
+}
+
+.titleSub {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #4a90d9;
+  margin: 0;
+}
+
+/* Vehicles Grid */
+.vehiclesGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+/* Vehicle Card */
+.vehicleCard {
+  background-color: #f8fafc;
+  border: 1px solid #e8e8e8;
+  border-radius: 16px;
+  padding: 30px;
+  text-align: center;
+  transition: all 0.4s ease;
+}
+
+.vehicleCard:hover {
+  background-color: #ffffff;
+  border-color: #adab3f;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+  transform: translateY(-8px);
+}
+
+.cardImage {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.cardImage img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.cardTitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #0a1628;
+  margin-bottom: 20px;
+}
+
+.cardInfo {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.infoItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  color: #666666;
+}
+
+.infoIcon {
+  font-size: 16px;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 25px 0;
+}
+
+.features li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  color: #444444;
+  margin-bottom: 10px;
+}
+
+.featureDot {
+  width: 6px;
+  height: 6px;
+  background-color: #adab3f;
+  border-radius: 50%;
+}
+
+.bestFor {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  color: #0a1628;
+  margin: 0;
+}
+
+.bestFor strong {
+  color: #adab3f;
+}
+
+/* Responsive */
+@media (min-width: 576px) {
+  .vehiclesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .vehicles {
+    padding: 100px 0;
+  }
+  
+  .subtitle {
+    flex-direction: row;
+  }
+  
+  .title {
+    font-size: 42px;
+  }
+}
+
+@media (min-width: 992px) {
+  .vehiclesGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .container {
+    padding: 0 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .vehicles {
+    padding: 120px 0;
+  }
+  
+  .title {
+    font-size: 48px;
+  }
+  
+  .titleSub {
+    font-size: 28px;
+  }
+}

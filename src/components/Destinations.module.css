@@ -1,0 +1,165 @@
+.gallerySection {
+  padding: 40px 0 0 0; /* Top padding only, reduced */
+  background-color: #ffffff;
+}
+
+.titleContainer {
+  text-align: center;
+  margin-bottom: 50px;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+}
+
+/* ... title styles ... */
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-flow: dense;
+  gap: 0; /* No Gap */
+  max-width: 100%; /* Full Width */
+  margin: 0;
+}
+
+.gridItem {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  cursor: pointer;
+  height: 350px; /* Original Fixed Height */
+  transition: transform 0.3s ease;
+  border-radius: 0; /* Square edges */
+}
+
+.wide {
+  grid-column: span 2;
+}
+
+.extraTall {
+  grid-row: span 2;
+}
+
+.tall {
+  grid-row: span 2;
+  height: 700px;
+}
+
+.superTall {
+  grid-row: span 3;
+}
+
+.short {
+  grid-row: span 1;
+}
+
+.gridItem:hover .image {
+  transform: scale(1.1);
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  z-index: 1;
+}
+
+.content {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  z-index: 2;
+}
+
+.itemName {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.itemTag {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  background-color: #ff0055; /* Pink/Red accent from screenshot */
+  border-radius: 50%;
+}
+
+/* Responsive Grid Spans */
+@media (min-width: 992px) {
+  .gridContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .big {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+}
+
+@media (max-width: 767px) {
+  .gridContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gridItem {
+    height: 200px; /* Shorter items on mobile */
+  }
+
+  /* Reset spans for mobile to keep grid consistent or allow simple 2-col flow */
+  .wide, .big, .tall, .superTall, .extraTall {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  /* Optional: Make every 3rd item span full width to break monotony? 
+     Or just keep it simple 2-col grid. Let's keep smooth 2-col grid for now. */
+
+  .itemName {
+    font-size: 18px; /* Smaller text */
+  }
+  
+  .itemTag {
+    font-size: 11px;
+  }
+  
+  .content {
+    bottom: 15px;
+    left: 15px;
+  }
+}
+
+.gridContentWrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  /* Ensure image covers the wrapper */
+}

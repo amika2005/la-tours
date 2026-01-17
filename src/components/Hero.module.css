@@ -1,0 +1,386 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Background */
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.heroImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 1s ease-in-out;
+  z-index: 0;
+}
+
+.imageOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(10, 22, 40, 0.3) 0%,
+    rgba(10, 22, 40, 0.1) 40%,
+    rgba(10, 22, 40, 0.5) 100%
+  );
+  z-index: 1;
+}
+
+/* Main Content - Centered */
+.content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  padding: 0 20px;
+  margin-top: -80px; /* Slight upward offset */
+}
+
+.headline {
+  margin-bottom: 20px;
+}
+
+.headlineMain {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  font-weight: 400;
+  font-style: italic;
+  color: #ffffff;
+  letter-spacing: 2px;
+  text-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+  display: block;
+  line-height: 1.2;
+}
+
+.subheadline {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.9);
+  letter-spacing: 3px;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+  margin: 0;
+}
+
+/* Slide Navigation - Right Side */
+.slideNav {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 20;
+}
+
+.navBtn {
+  width: 45px;
+  height: 45px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.navBtn svg {
+  width: 20px;
+  height: 20px;
+  stroke: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.navBtn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.6);
+  transform: scale(1.1);
+}
+
+/* Location Info - Bottom Left */
+.locationInfo {
+  position: absolute;
+  bottom: 50px;
+  left: 40px;
+  z-index: 20;
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  max-width: 400px;
+}
+
+.locationDot {
+  width: 12px;
+  height: 12px;
+  background-color: #ffcc00;
+  border-radius: 50%;
+  margin-top: 5px;
+  flex-shrink: 0;
+  box-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+}
+
+.locationContent {
+  color: #ffffff;
+}
+
+.locationName {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffcc00;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+.locationDesc {
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* CTA - Bottom Right */
+.ctaArea {
+  position: absolute;
+  bottom: 50px;
+  right: 100px;
+  z-index: 20;
+}
+
+.ctaLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 25px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  transition: all 0.3s ease;
+}
+
+.ctaLink:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #ffffff;
+}
+
+.ctaIcon {
+  display: flex;
+  width: 14px;
+  height: 14px;
+}
+
+.ctaIcon svg {
+  width: 14px;
+  height: 14px;
+  stroke: #ffffff;
+  transition: transform 0.3s ease;
+}
+
+.ctaLink:hover .ctaIcon svg {
+  transform: translateX(5px);
+}
+
+/* Slide Indicators */
+.indicators {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 20;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.indicatorActive {
+  background: #ffffff;
+  border-color: #ffffff;
+}
+
+.indicator:hover {
+  border-color: #ffffff;
+}
+
+/* Scroll Text - Right Edge */
+.scrollText {
+  position: absolute;
+  right: 15px;
+  bottom: 50%;
+  transform: translateY(50%) rotate(90deg);
+  transform-origin: right center;
+  z-index: 20;
+}
+
+.scrollText span {
+  font-family: 'Raleway', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .headlineMain {
+    font-size: 56px;
+  }
+  
+  .subheadline {
+    font-size: 18px;
+    letter-spacing: 4px;
+  }
+}
+
+@media (min-width: 992px) {
+  .headlineMain {
+    font-size: 72px;
+  }
+  
+  .subheadline {
+    font-size: 20px;
+    letter-spacing: 5px;
+  }
+  
+  .locationInfo {
+    left: 60px;
+    bottom: 60px;
+  }
+  
+  .ctaArea {
+    right: 120px;
+    bottom: 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .headlineMain {
+    font-size: 80px;
+  }
+  
+  .subheadline {
+    font-size: 22px;
+    letter-spacing: 6px;
+  }
+  
+  .locationInfo {
+    left: 80px;
+    bottom: 80px;
+    max-width: 450px;
+  }
+  
+  .locationName {
+    font-size: 18px;
+  }
+  
+  .locationDesc {
+    font-size: 14px;
+  }
+  
+  .ctaArea {
+    right: 150px;
+    bottom: 80px;
+  }
+}
+
+/* Mobile Specific Optimizations */
+@media (max-width: 767px) {
+  .content {
+    margin-top: -40px; /* Less offset on mobile */
+    padding: 0 15px;
+  }
+
+  .headlineMain {
+    font-size: 36px; /* Smaller for mobile */
+    line-height: 1.1;
+  }
+
+  .subheadline {
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-top: 10px;
+  }
+
+  .slideNav {
+    right: 10px;
+  }
+  
+  .navBtn {
+    width: 36px;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.15); /* More visible on mobile */
+  }
+  
+  .navBtn svg {
+    width: 16px;
+    height: 16px;
+  }
+  
+  /* Simplify visual noise on mobile */
+  .locationInfo {
+    display: none; /* Hide detailed location info on mobile to focus on CTA */
+  }
+  
+  .ctaArea {
+    bottom: 80px; /* Above bottom edge */
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .ctaLink {
+    width: auto;
+    min-width: 200px;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.5);
+    padding: 14px 30px;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  
+  .indicators {
+    bottom: 30px;
+  }
+  
+  .scrollText {
+    display: none;
+  }
+}

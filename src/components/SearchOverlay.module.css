@@ -1,0 +1,154 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dimmed background */
+    z-index: 2000;
+    cursor: pointer; /* Add pointer to indicate clickable backdrop */
+    backdrop-filter: blur(4px);
+  }
+  
+  .searchBarWrapper {
+    background-color: #ffffff;
+    width: 100%;
+    padding: 20px 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    cursor: default; /* Reset cursor for the bar itself */
+  }
+  
+  .searchContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+  }
+  
+  .inputWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .searchInput {
+    width: 100%;
+    background: #f1f5f9;
+    border: 1px solid #e2e8f0;
+    border-radius: 50px;
+    padding: 15px 50px 15px 25px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    color: #0f172a;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  .searchInput:focus {
+    border-color: #FFCC00;
+    box-shadow: 0 0 0 3px rgba(255, 204, 0, 0.1);
+    background: #ffffff;
+  }
+  
+  .searchIcon {
+    position: absolute;
+    right: 20px;
+    color: #64748b;
+  }
+  
+  .closeBtn {
+    position: absolute;
+    right: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+    padding: 5px;
+  }
+  
+  .closeBtn:hover {
+    color: #FFCC00;
+  }
+  
+  /* Results Dropdown */
+  .results {
+    margin-top: 15px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid #e2e8f0;
+  }
+  
+  .resultItem {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px 20px;
+    border-bottom: 1px solid #f1f5f9;
+    text-decoration: none;
+    transition: background 0.2s ease;
+  }
+  
+  .resultItem:last-child {
+    border-bottom: none;
+  }
+  
+  .resultItem:hover {
+    background: #f8fafc;
+  }
+  
+  .resultImage {
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+    object-fit: cover;
+  }
+  
+  .resultInfo {
+    flex: 1;
+  }
+  
+  .resultTitle {
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #0f172a;
+    font-size: 0.95rem;
+    margin-bottom: 2px;
+  }
+  
+  .resultLocation {
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.8rem;
+    color: #64748b;
+  }
+  
+  .noResults {
+    padding: 20px;
+    text-align: center;
+    color: #64748b;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  @media (max-width: 768px) {
+    .closeBtn {
+      position: static;
+      margin-left: 10px;
+      color: #0f172a;
+    }
+    
+    .searchContainer {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .inputWrapper {
+      flex: 1;
+    }
+  }

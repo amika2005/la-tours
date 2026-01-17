@@ -1,0 +1,289 @@
+.tours {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.subtitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.icon {
+  width: 12px;
+  height: 12px;
+  display: flex;
+}
+
+.icon svg {
+  width: 12px;
+  height: 12px;
+  fill: #4a90d9;
+}
+
+.subtitleText {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #0a1628;
+}
+
+.title {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  font-weight: 600;
+  color: #0a1628;
+  margin-bottom: 10px;
+}
+
+.titleSub {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #1a2d4a;
+  margin: 0;
+}
+
+/* Tours Grid */
+.toursGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+/* Tour Card */
+.tourCard {
+  background-color: #ffffff;
+  box-shadow: 0 5px 30px rgba(10, 22, 40, 0.08);
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.tourCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(10, 22, 40, 0.15);
+}
+
+.cardImage {
+  position: relative;
+  overflow: hidden;
+}
+
+.imagePlaceholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 220px;
+  background: linear-gradient(135deg, #0a1628 0%, #1a2d4a 50%, #2c5aa0 100%);
+}
+
+.imageIcon {
+  font-size: 60px;
+}
+
+.tourImage {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.tourCard:hover .tourImage {
+  transform: scale(1.1);
+}
+
+.duration {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  background-color: rgba(10, 22, 40, 0.9);
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 8px 15px;
+}
+
+.cardContent {
+  padding: 30px;
+}
+
+.cardTitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: #0a1628;
+  margin-bottom: 10px;
+}
+
+.cardLocation {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  color: #3A3A3C;
+  margin-bottom: 15px;
+}
+
+.locationIcon {
+  width: 12px;
+  height: 12px;
+  display: flex;
+}
+
+.locationIcon svg {
+  width: 12px;
+  height: 12px;
+  fill: #4a90d9;
+}
+
+.cardDesc {
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #3A3A3C;
+  margin-bottom: 20px;
+}
+
+.cardMeta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-top: 1px solid rgba(10, 22, 40, 0.1);
+  border-bottom: 1px solid rgba(10, 22, 40, 0.1);
+  margin-bottom: 20px;
+}
+
+.distance {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  color: #666666;
+}
+
+.price {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #0a1628;
+}
+
+.cardLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #4a90d9;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.cardLink:hover {
+  color: #2c5aa0;
+}
+
+.linkIcon {
+  display: flex;
+  width: 12px;
+  height: 12px;
+  transition: transform 0.3s ease;
+}
+
+.linkIcon svg {
+  width: 12px;
+  height: 12px;
+  stroke: currentColor;
+}
+
+.cardLink:hover .linkIcon {
+  transform: translateX(5px);
+}
+
+/* View All */
+.viewAll {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.viewAllLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #0a1628;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.viewAllLink:hover {
+  color: #4a90d9;
+}
+
+.viewAllLink:hover .linkIcon {
+  transform: translateX(5px);
+}
+
+/* Responsive */
+@media (min-width: 576px) {
+  .toursGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .tours {
+    padding: 100px 0;
+  }
+  
+  .subtitle {
+    flex-direction: row;
+  }
+  
+  .title {
+    font-size: 42px;
+  }
+}
+
+@media (min-width: 992px) {
+  .toursGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .container {
+    padding: 0 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .tours {
+    padding: 120px 0;
+  }
+  
+  .title {
+    font-size: 48px;
+  }
+  
+  .titleSub {
+    font-size: 28px;
+  }
+}

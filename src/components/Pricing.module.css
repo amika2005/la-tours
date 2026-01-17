@@ -1,0 +1,344 @@
+.pricing {
+  padding: 80px 0;
+  background: linear-gradient(to bottom, #f8fafc 0%, #ffffff 50%, #f8fafc 100%);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.subtitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.icon {
+  width: 12px;
+  height: 12px;
+  display: flex;
+}
+
+.icon svg {
+  width: 12px;
+  height: 12px;
+  fill: #4a90d9;
+}
+
+.subtitleText {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #0a1628;
+}
+
+.title {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  font-weight: 600;
+  color: #0a1628;
+  margin-bottom: 10px;
+}
+
+.titleSub {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #1a2d4a;
+  margin: 0;
+}
+
+/* Rate Box - Clean Minimal Design */
+.rateBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  background: #ffffff;
+  padding: 50px 70px;
+  margin: 0 auto 60px;
+  max-width: 550px;
+  border-radius: 16px;
+  border: 2px solid #e8e8e8;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.rateBox:hover {
+  border-color: #adab3f;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.08);
+}
+
+.rateIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #0a1628 0%, #1a2d4a 100%);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.rateContent {
+  text-align: left;
+}
+
+.rateTitle {
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #adab3f;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.rateValue {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin: 0;
+}
+
+.currency {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #0a1628;
+}
+
+.amount {
+  font-family: 'Playfair Display', serif;
+  font-size: 64px;
+  font-weight: 700;
+  color: #0a1628;
+  line-height: 1;
+}
+
+.unit {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #666666;
+  margin-left: 5px;
+}
+
+/* Table Section */
+.tableSection {
+  margin-bottom: 50px;
+}
+
+.tableTitle {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #0a1628;
+  margin-bottom: 25px;
+}
+
+.goldDot {
+  width: 10px;
+  height: 10px;
+  background-color: #4a90d9;
+  border-radius: 50%;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  box-shadow: 0 5px 30px rgba(10, 22, 40, 0.08);
+}
+
+.table th,
+.table td {
+  padding: 18px 20px;
+  text-align: left;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+}
+
+.table th {
+  background-color: #0a1628;
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 12px;
+}
+
+.table tbody tr {
+  border-bottom: 1px solid rgba(10, 22, 40, 0.08);
+  transition: background-color 0.3s ease;
+}
+
+.table tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+.table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.priceCell {
+  font-weight: 700;
+  color: #0a1628;
+}
+
+/* Notes */
+.notes {
+  background-color: #ffffff;
+  padding: 30px;
+  box-shadow: 0 5px 30px rgba(10, 22, 40, 0.08);
+  margin-bottom: 40px;
+}
+
+.notesTitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #0a1628;
+  margin-bottom: 20px;
+}
+
+.notesList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.notesList li {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 12px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  color: #3A3A3C;
+  line-height: 1.6;
+}
+
+.noteDot {
+  width: 6px;
+  height: 6px;
+  background-color: #4a90d9;
+  border-radius: 50%;
+  margin-top: 8px;
+  flex-shrink: 0;
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+}
+
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 18px 40px;
+  background-color: #0a1628;
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid #0a1628;
+  transition: all 0.3s ease;
+}
+
+.ctaButton:hover {
+  background-color: #1a2d4a;
+  border-color: #1a2d4a;
+}
+
+.btnIcon {
+  display: flex;
+  width: 14px;
+  height: 14px;
+}
+
+.btnIcon svg {
+  width: 14px;
+  height: 14px;
+  stroke: currentColor;
+  transition: transform 0.3s ease;
+}
+
+.ctaButton:hover .btnIcon svg {
+  transform: translateX(5px);
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .pricing {
+    padding: 100px 0;
+  }
+  
+  .subtitle {
+    flex-direction: row;
+  }
+  
+  .title {
+    font-size: 42px;
+  }
+  
+  .rateBox {
+    display: inline-flex;
+    padding: 40px 60px;
+  }
+  
+  .container {
+    text-align: left;
+  }
+  
+  .header,
+  .cta {
+    text-align: center;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    padding: 0 60px;
+  }
+  
+  .amount {
+    font-size: 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .pricing {
+    padding: 120px 0;
+  }
+  
+  .title {
+    font-size: 48px;
+  }
+  
+  .titleSub {
+    font-size: 28px;
+  }
+}

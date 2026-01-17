@@ -1,0 +1,48 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+.content {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  color: #0a1628;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #adab3f;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+.text {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #3A3A3C;
+  margin-bottom: 15px;
+}
+
+.list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.list li {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #3A3A3C;
+  margin-bottom: 10px;
+}
