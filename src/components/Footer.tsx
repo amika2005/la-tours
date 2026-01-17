@@ -58,8 +58,8 @@ export default function Footer() {
 
             <div className={styles.addressBox}>
               <p className={styles.companyName}>LA Tours (Private) Ltd</p>
-              <p>No. 123, Galle Road,</p>
-              <p>Colombo 03,</p>
+              <p>No 143 Kurunduwatta,</p>
+              <p>Ahangama, Galle,</p>
               <p>SRI LANKA.</p>
             </div>
 

@@ -54,7 +54,7 @@ export const tours: Tour[] = [
   },
   {
     id: 6,
-    title: 'Ella Day Tour',
+    title: 'Ella Transport',
     location: 'Hill Country',
     duration: 'Full Day',
     distance: '~400 km',
@@ -72,7 +72,7 @@ export const tours: Tour[] = [
   },
   {
     id: 2,
-    title: 'Colombo City Tour',
+    title: 'Colombo City Transport',
     location: 'Colombo',
     duration: 'Half Day',
     distance: '~50 km',
@@ -90,7 +90,7 @@ export const tours: Tour[] = [
   },
   {
     id: 3,
-    title: 'Kandy Day Tour',
+    title: 'Kandy Transport',
     location: 'Kandy',
     duration: 'Full Day',
     distance: '~230 km',
@@ -108,7 +108,7 @@ export const tours: Tour[] = [
   },
   {
     id: 4,
-    title: 'Galle Day Tour',
+    title: 'Galle Transport',
     location: 'Galle',
     duration: 'Full Day',
     distance: '~260 km',
@@ -126,7 +126,7 @@ export const tours: Tour[] = [
   },
   {
     id: 14,
-    title: 'Sigiriya Day Tour',
+    title: 'Sigiriya Transport',
     location: 'Cultural Triangle',
     duration: 'Full Day',
     distance: '~175 km',
@@ -144,7 +144,7 @@ export const tours: Tour[] = [
   },
   {
     id: 15,
-    title: 'Dambulla Day Tour',
+    title: 'Dambulla Transport',
     location: 'Cultural Triangle',
     duration: 'Half Day',
     distance: '~160 km',
@@ -162,7 +162,7 @@ export const tours: Tour[] = [
   },
   {
     id: 7,
-    title: 'Hikkaduwa Day Tour',
+    title: 'Hikkaduwa Transport',
     location: 'South Coast',
     duration: 'Full Day',
     distance: '~120 km',
@@ -180,7 +180,7 @@ export const tours: Tour[] = [
   },
   {
     id: 8,
-    title: 'Unawatuna Day Tour',
+    title: 'Unawatuna Transport',
     location: 'South Coast',
     duration: 'Full Day',
     distance: '~145 km',
@@ -198,7 +198,7 @@ export const tours: Tour[] = [
   },
   {
     id: 9,
-    title: 'Ahangama Day Tour',
+    title: 'Ahangama Transport',
     location: 'South Coast',
     duration: 'Full Day',
     distance: '~160 km',
@@ -216,7 +216,7 @@ export const tours: Tour[] = [
   },
   {
     id: 10,
-    title: 'Mirissa Day Tour',
+    title: 'Mirissa Transport',
     location: 'South Coast',
     duration: 'Full Day',
     distance: '~170 km',
@@ -234,7 +234,7 @@ export const tours: Tour[] = [
   },
   {
     id: 11,
-    title: 'Arugam Bay Tour',
+    title: 'Arugam Bay Transport',
     location: 'East Coast',
     duration: 'Extended Day',
     distance: '~350 km',
@@ -252,7 +252,7 @@ export const tours: Tour[] = [
   },
   {
     id: 12,
-    title: 'Nuwara Eliya Tour',
+    title: 'Nuwara Eliya Transport',
     location: 'Hill Country',
     duration: 'Full Day',
     distance: '~180 km',

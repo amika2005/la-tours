@@ -127,8 +127,8 @@ export default function Contact() {
                 <div className={styles.infoIcon}><MapPin size={24} color="#0a1628" /></div>
                 <div className={styles.infoContent}>
                   <h4>Visit Us</h4>
-                  <p>No. 123, Galle Road,</p>
-                  <p>Colombo 03, Sri Lanka</p>
+                  <p>No 143 Kurunduwatta,</p>
+                  <p>Ahangama, Galle, Sri Lanka</p>
                 </div>
               </div>
 

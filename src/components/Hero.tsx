@@ -17,9 +17,9 @@ export default function Hero() {
   const slides: Slide[] = [
     {
       id: 1,
-      location: 'Sigiriya, Sri Lanka',
-      description: 'A mystical ancient rock fortress adorned with mesmerizing frescoes, lush gardens, and unparalleled panoramic vistas.',
-      image: '/assets/destinations-hero.png'
+      location: 'Ahangama, Sri Lanka',
+      description: 'Experience the thrill of world-class surfing and the laid-back coastal vibes in the heart of Ahangama.',
+      image: '/assets/surfing.jpg'
     },
     {
       id: 2,
