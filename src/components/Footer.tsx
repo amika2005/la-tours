@@ -58,7 +58,6 @@ export default function Footer() {
 
             <div className={styles.addressBox}>
               <p className={styles.companyName}>LA Tours (Private) Ltd</p>
-              <p>No 143 Kurunduwatta,</p>
               <p>Ahangama, Galle,</p>
               <p>SRI LANKA.</p>
             </div>
@@ -73,7 +72,7 @@ export default function Footer() {
 
             <div className={styles.openingHours}>
               <p className={styles.infoLabel}>Opening Hours</p>
-              <p>Mon - Fri: 8 am to 8 pm</p>
+              <p>Open 24 Hours</p>
             </div>
           </div>
         </div>

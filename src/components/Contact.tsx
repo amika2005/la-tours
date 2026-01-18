@@ -127,8 +127,8 @@ export default function Contact() {
                 <div className={styles.infoIcon}><MapPin size={24} color="#0a1628" /></div>
                 <div className={styles.infoContent}>
                   <h4>Visit Us</h4>
-                  <p>No 143 Kurunduwatta,</p>
-                  <p>Ahangama, Galle, Sri Lanka</p>
+                  <p>Ahangama, Galle,</p>
+                  <p>Sri Lanka</p>
                 </div>
               </div>
 
@@ -136,7 +136,7 @@ export default function Contact() {
                 <div className={styles.infoIcon}><Clock size={24} color="#0a1628" /></div>
                 <div className={styles.infoContent}>
                   <h4>Opening Hours</h4>
-                  <p>Mon - Sun: 8:00 AM - 8:00 PM</p>
+                  <p>Open 24 Hours</p>
                   <p>24/7 Airport Transfers</p>
                 </div>
               </div>

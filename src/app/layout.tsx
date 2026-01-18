@@ -2,6 +2,7 @@ import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
+import SocialSideBar from '@/components/SocialSideBar';
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 
@@ -298,6 +299,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <Header />
         <main>{children}</main>
         <Footer />
+        <SocialSideBar />
         <WhatsAppButton />
       </body>
     </html>

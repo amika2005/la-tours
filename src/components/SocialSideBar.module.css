@@ -1,0 +1,79 @@
+.sidebar {
+  position: fixed;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 100;
+  padding: 15px 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(5px);
+  border-radius: 50px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.socialIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+}
+
+.socialIcon:hover {
+  transform: scale(1.2);
+}
+
+.facebook:hover {
+  color: #1877F2;
+}
+
+.instagram:hover {
+  color: #E4405F;
+}
+
+.whatsapp:hover {
+  color: #25D366;
+}
+
+/* Tooltip Styles */
+.socialIcon {
+  position: relative;
+}
+
+.socialIcon::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%) translateX(10px);
+  background-color: #000;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  pointer-events: none;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.socialIcon:hover::after {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-50%) translateX(15px);
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    display: none; 
+  }
+}
