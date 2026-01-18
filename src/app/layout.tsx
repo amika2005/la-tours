@@ -176,8 +176,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
       worstRating: '1',
     },
     sameAs: [
-      'https://www.facebook.com/latourslk',
-      'https://www.instagram.com/latourslk',
+      'https://www.facebook.com/share/1FPLSJy6t9/?mibextid=wwXIfr',
+      'https://www.instagram.com/latourstaxi?igsh=ZG1qbjVjYm8wMHgz&utm_source=qr',
       'https://www.tripadvisor.com/latourslk',
     ],
     hasOfferCatalog: {
